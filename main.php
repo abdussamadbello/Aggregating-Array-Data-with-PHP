@@ -73,51 +73,51 @@ foreach ($data_1 as $key => $value) {
    $month_orders=$value['month_orders'];
    switch($month){
    case 'Jan':
-   $index=1;
+   $index=0;
    computedata($month,$month_orders,$index );
    break;
    case 'Feb':
-   $index=2;
+   $index=1;
    computedata($month,$month_orders,$index );
    break;
    case 'Mar':
-   $index=3;
+   $index=2;
    computedata($month,$month_orders,$index );
    break;
    case 'Apr':
-   $index=4;
+   $index=3;
    computedata($month,$month_orders,$index );
    break;
    case 'May':
-   $index=5;
+   $index=4;
    computedata($month,$month_orders,$index );
    break;
    case 'Jun':
-   $index=6;
+   $index=5;
    computedata($month,$month_orders,$index );
    break;
    case 'Jul':
-   $index=7;
+   $index=6;
    computedata($month,$month_orders,$index );
    break;
    case 'Aug':
-   $index=8;
+   $index=7;
    computedata($month,$month_orders,$index );
    break;
    case 'Sep':
-   $index=9;
+   $index=8;
    computedata($month,$month_orders,$index );
    break;
    case 'Oct':
-   $index=10;
+   $index=9;
    computedata($month,$month_orders,$index );
    break;
    case 'Nov':
-   $index=11;
+   $index=10;
    computedata($month,$month_orders,$index );
    break;
    case 'Dec':
-   $index=12;
+   $index=11;
    computedata($month,$month_orders,$index );
    break;
    }

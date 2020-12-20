@@ -125,12 +125,20 @@ foreach ($data_1 as $key => $value) {
 
 
 function computedata($month,$orders,$index){
+
+//referencing the new array as a global scope after initializatioon  
 global $newdata;
+
+//check if array is empty/undefined, if yes set it to 0
 if (!isset($newdata[$index]['month_orders'])){
   $newdata[$index]['month_orders']= '0';
 }
+
+//fill the variables
 $val1 = $month;
+//add month order variable to existing month order array
 $val2=$newdata[$index]['month_orders'] + $orders;
+//add variables to the new array according to the index
 $newdata[$index]=array('mon'=>$val1,'month_orders'=>$val2);
 
 }
